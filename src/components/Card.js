@@ -1,33 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Modal from '../components/Modal';
 
-class Card extends Component {
-    constructor() {
-        super();
-        this.state = {
-            show: false
-        }
+function Card({ name, level, photo }) {
+    const [show, setShow] = useState(false);
+
+    const showModal = () => {
+        setShow(true);
     }
-    showModal = () => {
-        console.log('entra')
-        this.setState({ show: true });
+
+    const hideModal = () => {
+        setShow(false);
     }
-    hideModal = () => {
-        console.log('closed')
-        this.setState({ show: false });
-    }
-    render() {
-        return (
-            <div className='tc bg-dark-blue dib br3 pa3 ma2 grow bw2 shadow-5' >
-                <img src={`${this.props.photo}`} alt='_digiPhoto_' onClick={this.showModal} />
-                <div>
-                    <h2>{this.props.name}</h2>
-                    <p>{this.props.level}</p>
-                </div>
-                <Modal show={this.state.show} handleClose={this.hideModal} img={this.props.photo} />
+
+    return (
+        <div className='tc bg-dark-blue dib br3 pa3 ma2 grow bw2 shadow-5' >
+            <Modal show={show} handleClose={hideModal} img={photo} />
+            <img src={`${photo}`} alt='_digiPhoto_' onClick={showModal} />
+            <div>
+                <h2>{name}</h2>
+                <p>{level}</p>
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default Card;
