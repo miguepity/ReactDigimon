@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Digimon Basic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digimon Basic'), url('../../Fonts/DigimonBasic.woff') format('woff');
+}
+
+h1{
+    font-family: 'Digimon Basic';
+    font-weight: 200;
+    color: linear-gradient(315deg, #f5df2e 0%, #f07654 74%);
+}
