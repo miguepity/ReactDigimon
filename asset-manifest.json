@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ReactDigimon/static/css/main.39c914f5.css",
+    "main.js": "/ReactDigimon/static/js/main.5d03e1ce.js",
+    "static/js/787.de9896a5.chunk.js": "/ReactDigimon/static/js/787.de9896a5.chunk.js",
+    "static/media/DigimonBasic.woff": "/ReactDigimon/static/media/DigimonBasic.66687d83fcc915914527.woff",
+    "index.html": "/ReactDigimon/index.html",
+    "main.39c914f5.css.map": "/ReactDigimon/static/css/main.39c914f5.css.map",
+    "main.5d03e1ce.js.map": "/ReactDigimon/static/js/main.5d03e1ce.js.map",
+    "787.de9896a5.chunk.js.map": "/ReactDigimon/static/js/787.de9896a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39c914f5.css",
+    "static/js/main.5d03e1ce.js"
+  ]
+}
